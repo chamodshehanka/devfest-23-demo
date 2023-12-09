@@ -81,7 +81,6 @@ spec:
       labels:
         app: devfest-demo-test-1
     spec:
-      containerConcurrency: 80
       containers:
       - image: busybox:latest
         name: placeholder-1
@@ -97,8 +96,6 @@ spec:
           periodSeconds: 240
           tcpSocket:
             port: 8080
-          timeoutSeconds: 240
-      timeoutSeconds: 300
     replicas: 1
     selector:
       matchLabels:
