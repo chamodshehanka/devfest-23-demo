@@ -122,3 +122,5 @@ kubectl expose deployment devfest-demo-test-1 --type=LoadBalancer --port 80 --ta
 kubectl get svc
 
 ```
+
+
